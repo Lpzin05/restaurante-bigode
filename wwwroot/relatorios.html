@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante do Bigode - Relatórios</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">Restaurante do Bigode - Relatórios</div>
+    <nav class="nav-actions">
+      <a class="header-link" href="painel.html">Painel</a>
+      <a class="header-link" href="admin-cardapio.html">Cardápio</a>
+      <a class="header-link" href="cliente.html">Pedido online</a>
+    </nav>
+  </header>
+
+  <div id="loading">
+    <div class="loading-spinner"></div>
+    
+  </div>
+  <main class="relatorios-layout">
+
+    <!-- Indicadores gerais -->
+    <section class="relatorio-section">
+      <h2>Indicadores Gerais</h2>
+      <div class="indicadores-grid">
+        <div class="indicador-card">
+          <div class="indicador-titulo">Total de Pedidos</div>
+          <div class="indicador-valor" id="totalPedidos">—</div>
+        </div>
+        <div class="indicador-card">
+          <div class="indicador-titulo">Faturamento Total</div>
+          <div class="indicador-valor" id="faturamentoTotal">—</div>
+        </div>
+        <div class="indicador-card">
+          <div class="indicador-titulo">Ticket Médio</div>
+          <div class="indicador-valor" id="ticketMedio">—</div>
+        </div>
+        <div class="indicador-card">
+          <div class="indicador-titulo">Pedidos Finalizados</div>
+          <div class="indicador-valor" id="pedidosFinalizados">—</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="relatorios-colunas">
+
+      <!-- Produtos mais pedidos -->
+      <section class="relatorio-section">
+        <h2>Produtos Mais Pedidos</h2>
+        <p class="small-text">Análise de frequência dos itens — identifica os produtos com maior demanda.</p>
+        <div id="rankingProdutos" class="ranking-lista"></div>
+      </section>
+
+      <!-- Formas de pagamento -->
+      <section class="relatorio-section">
+        <h2>Formas de Pagamento</h2>
+        <p class="small-text">Distribuição dos pedidos por forma de pagamento utilizada.</p>
+        <div id="rankingPagamento" class="ranking-lista"></div>
+      </section>
+
+      <!-- Tipo de entrega -->
+      <section class="relatorio-section">
+        <h2>Tipo de Entrega</h2>
+        <p class="small-text">Proporção entre pedidos para entrega e retirada no balcão.</p>
+        <div id="rankingEntrega" class="ranking-lista"></div>
+      </section>
+
+      <!-- Status dos pedidos -->
+      <section class="relatorio-section">
+        <h2>Status dos Pedidos</h2>
+        <p class="small-text">Visão atual da distribuição de pedidos por etapa do atendimento.</p>
+        <div id="rankingStatus" class="ranking-lista"></div>
+      </section>
+
+    </div>
+
+    <!-- Previsão simples -->
+    <section class="relatorio-section">
+      <h2>Previsão de Faturamento</h2>
+      <p class="small-text">
+        Estimativa baseada na média de faturamento por pedido. 
+        Técnica de análise preditiva simples aplicada aos dados do sistema.
+      </p>
+      <div class="indicadores-grid" id="previsao"></div>
+    </section>
+
+  </main>
+
+  <script src="relatorios.js"></script>
+</body>
+</html>

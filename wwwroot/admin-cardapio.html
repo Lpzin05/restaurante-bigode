@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante do Bigode - Cardápio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">Restaurante do Bigode - Editar Cardápio</div>
+    <nav class="nav-actions">
+      <a class="header-link" href="painel.html">Painel</a>
+      <a class="header-link" href="cliente.html">Pedido online</a>
+    </nav>
+  </header>
+
+  <main class="admin-layout">
+    <section class="checkout admin-form">
+      <h2 id="formTitulo">Novo item</h2>
+      <input type="hidden" id="produtoId">
+
+      <label for="categoria">Categoria</label>
+      <input id="categoria" placeholder="Ex.: Marmitas">
+
+      <label for="nomeProduto">Nome</label>
+      <input id="nomeProduto" placeholder="Ex.: Bife acebolado">
+
+      <label for="preco">Preço</label>
+      <input id="preco" type="number" min="0" step="0.01">
+
+      <label for="descricao">Descrição</label>
+      <textarea id="descricao"></textarea>
+
+      <label class="checkbox-line">
+        <input id="ativo" type="checkbox" checked>
+        Disponível no cardápio
+      </label>
+
+      <button id="salvarProduto" class="primary-button" type="button">Salvar</button>
+      <button id="limparFormulario" class="secondary-button" type="button">Limpar</button>
+    </section>
+
+    <section class="panel-column admin-list">
+      <h2>Itens cadastrados</h2>
+      <div id="produtos"></div>
+    </section>
+  </main>
+
+  <script src="admin-cardapio.js"></script>
+</body>
+</html>

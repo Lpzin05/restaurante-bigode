@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante do Bigode - Painel</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">Restaurante do Bigode - Painel de Pedidos</div>
+    <nav class="nav-actions">
+      <a class="header-link" href="admin-cardapio.html">Cardápio</a>
+      <a class="header-link" href="relatorios.html">Relatórios</a>
+      <a class="header-link" href="cliente.html">Pedido online</a>
+      <button id="sair" class="header-button" type="button">Sair</button>
+    </nav>
+  </header>
+
+  <div id="loading">
+    <div class="loading-spinner"></div>
+    
+  </div>
+  <button id="ativarSom" class="sound-toggle" type="button">Ativar som de novos pedidos</button>
+
+  <main class="board">
+    <section class="panel-column">
+      <h2>Novos</h2>
+      <div id="novos"></div>
+    </section>
+    <section class="panel-column">
+      <h2>Preparando</h2>
+      <div id="preparando"></div>
+    </section>
+    <section class="panel-column">
+      <h2>Finalizados</h2>
+      <div id="finalizados"></div>
+    </section>
+  </main>
+
+  <script src="painel.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurante do Bigode - Pedido Online</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">Restaurante do Bigode - Pedido Online</div>
+    <a class="header-link" href="painel.html">Painel</a>
+  </header>
+
+  <div id="loading">
+    <div class="loading-spinner"></div>
+    
+  </div>
+  <main class="layout">
+    <section id="cardapio" class="menu-grid" aria-label="Cardápio"></section>
+
+    <aside id="checkout" class="checkout">
+      <h2>Finalizar pedido</h2>
+      <div class="total-line">
+        <span>Total</span>
+        <span>R$ <strong id="valorTotal">0.00</strong></span>
+      </div>
+      <div id="listaCarrinho" class="cart-summary">Carrinho vazio</div>
+
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" autocomplete="name">
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" autocomplete="tel">
+
+      <label for="tipo_entrega">Tipo de pedido</label>
+      <select id="tipo_entrega">
+        <option value="">Selecione</option>
+        <option value="entrega">Entrega</option>
+        <option value="retirada">Retirada</option>
+      </select>
+
+      <label for="endereco">Endereço</label>
+      <input type="text" id="endereco" autocomplete="street-address" placeholder="Obrigatório para entrega">
+
+      <label for="forma_pagamento">Forma de pagamento</label>
+      <select id="forma_pagamento">
+        <option value="">Selecione</option>
+        <option value="pix">PIX</option>
+        <option value="dinheiro">Dinheiro</option>
+        <option value="cartao">Cartão</option>
+      </select>
+
+      <label for="observacao">Observações</label>
+      <textarea id="observacao" placeholder="Opcional"></textarea>
+
+      <button id="enviarPedido" class="primary-button" type="button">Enviar pedido</button>
+    </aside>
+  </main>
+
+  <div class="mobile-cart">
+    <span><strong id="totalItens">0</strong> itens | R$ <strong id="valorTotalResumo">0.00</strong></span>
+    <button id="abrirCheckout" class="primary-button" type="button">Finalizar</button>
+  </div>
+
+  <div id="modalSucesso" class="modal" role="dialog" aria-modal="true" aria-labelledby="tituloSucesso">
+    <div class="modal-content">
+      <h2 id="tituloSucesso">Pedido enviado</h2>
+      <p>Seu pedido foi recebido com sucesso.</p>
+      <button id="fecharModal" class="primary-button" type="button">Fechar</button>
+    </div>
+  </div>
+
+  <script src="cliente.js"></script>
+</body>
+</html>
