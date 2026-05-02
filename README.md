@@ -160,7 +160,7 @@ O SQLite cria o arquivo `restaurante-bigode.db` automaticamente na primeira exec
 |    Nome   |     RA     |
 |-----------|------------|
 | Leandro   | R10474 — 5 |
-| Gabriel   |            |
+| Gabriel   | H75BEA — 8 |
 | Lucas     | R8514H — 1 |
 | Guilherme |            |
 
