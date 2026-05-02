@@ -16,16 +16,16 @@ Sistema web completo para gerenciamento de pedidos de um restaurante fictício, 
 ## 📸 Telas do Sistema
 
 ### 🛒 Pedido Online — Tela do Cliente
-![Pedido Online](docs/screenshots/cliente.png)
+![Pedido Online](screenshots/cliente.png)
 
 ### 🎛️ Painel de Pedidos — Área Administrativa
-![Painel de Pedidos](docs/screenshots/painel.png)
+![Painel de Pedidos](screenshots/painel.png)
 
 ### 🍴 Gerenciamento do Cardápio
-![Cardápio](docs/screenshots/cardapio.png)
+![Cardápio](screenshots/cardapio.png)
 
 ### 📊 Relatórios e Análise de Dados
-![Relatórios](docs/screenshots/relatorios.png)
+![Relatórios](screenshots/relatorios.png)
 
 ---
 
